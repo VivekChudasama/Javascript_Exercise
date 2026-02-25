@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <div>
+        <h1>Student Details</h1>
+        <label>student name</label>
+        <input type="text" placeholder="enter your name" id="sName">
+        <br>
+        <label>maths marks</label>
+        <input type="number" placeholder="enter your maths marks" id="mathsMarks" min="0" max="100" step="5">
+        <br>
+        <label>science marks</label>
+        <input type="number" placeholder="enter your science marks" id="scienceMarks">
+        <br>
+        <label>english marks</label>
+        <input type="number" placeholder="enter your english marks" id="englishMarks">
+        <br>
+        <button onclick="checkScore()">submit</button>
+        <div id="result"></div>
+    </div>
+
+    <div>
+        <h1>Array Manupulation</h1>
+        <div id="array"></div>
+        <button onclick="tillFive()">element of array till digit '5'</button>
+        <button onclick="skipFive()">print all other elements then '5'</button>
+        <div id="arrayElement"></div>
+    </div>
+
+</body>
+<script src="./script.js"></script>
+
+</html>
