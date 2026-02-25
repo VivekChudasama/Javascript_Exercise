@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+     <!-- {
+        "date": "2026-02-16",
+        "event": {
+            "name": "test1",
+            "location": "rajkot",
+            "price": 400
+        }
+    }, -->
+
+    <div >
+        <h1>event detailes</h1>
+        <label>Enter the date</label>
+        <input type="date" placeholder="Enter the date" id="date">
+        <label>Enter event name</label>
+        <input type="text" placeholder="Enter event name" id="eventName">
+        <label >Enter the location of event</label>
+        <input type="text" placeholder="Enter the location of event" id="Location">
+        <label> Enter the price of event</label>
+        <input type="number" placeholder="Enter the price of event" id="price">
+        <button onclick="addData()">submit</button>
+
+        <button onclick="groupByDate()">group by date</button>
+        <button onclick="priceFliter()">price higher then 200</button>
+        <button onclick="locationFilter()">Location = Rajkot</button>
+        <pre id="outputData"></pre>
+    </div>
+</body>
+<script src="./script.js"></script>
+</html>
