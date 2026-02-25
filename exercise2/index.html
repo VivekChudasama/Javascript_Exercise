@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div>
+        <!-- {id : 11 , description: 'order #11 placed' , date : '2022-04-21'} -->
+        <div>
+            <h3>Display array of object which date is of today's date.</h3>
+            <input type="number" id="uid" hidden>
+            <label>Description</label>
+            <input type="text" id="description" placeholder="Enter a description">
+            <br>
+            <label type="date">Enter a date</label>
+            <input type="date" id="date" placeholder="Enter a date">
+            <button onclick="addData()">submit</button>
+            <ul id="orderList"></ul>
+        </div>
+    </div>
+
+    <div>
+        <h3>Find out next digit of entered digit.</h3>
+        <label>Enter the number</label>
+        <input type="number" id="number">
+        <button onclick="graterNumber()">submit</button>
+        <div id="displayNumber"></div>
+    </div>
+    </div>
+
+    <div>
+        <h3>
+            replace all 'a' character with 'z' , only if 'a' is at first position in word
+        </h3>
+        <label>Enter the string</label>
+        <input type="text" id="replace">
+        <button onclick="replaceStr()">submit</button>
+        <div id="replaceStr"></div>
+    </div>
+
+    <div>
+        <h3>
+            reverse entered input.
+        </h3>
+        <label>Enter the string</label>
+        <input type="text" id="text">
+        <button onclick="revStr()">submit</button>
+        <div id="reverseStr"></div>
+    </div>
+
+    <div>
+        <h3>
+            find out total count of vowels inside input string.
+        </h3>
+        <label>Enter the string</label>
+        <input type="text" id="vowels">
+        <button onclick="getVowelsCount()">submit</button>
+        <div id="getVowels"></div>
+
+    </div>
+
+
+
+</body>
+<script src="./script.js"></script>
+
+</html>
