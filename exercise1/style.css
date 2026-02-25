@@ -1,0 +1,144 @@
+:root {
+  --primary-color: #0d6efd;
+  --secondary-color: #6c757d;
+  --background-color: #f8f9fa;
+  --font-main: sans-serif;
+  --card-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1),
+    0 2px 4px -1px rgba(0, 0, 0, 0.06);
+  --card-hover-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1),
+    0 4px 6px -2px rgba(0, 0, 0, 0.05);
+}
+
+body {
+  font-family: var(--font-main);
+  background-color: var(--background-color);
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Navbar  */
+.navbar {
+  position: relative;
+  padding: 10px;
+  transition: all 0.3s ease;
+  font-family: sans-serif;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.navItem {
+  margin-right: 25px;
+}
+.navbarLogo {
+  max-width: 130px;
+}
+
+.navLink {
+  font-weight: 500;
+  color: #333;
+  transition: color 0.2s;
+  text-decoration: none;
+}
+
+.navLink:hover,
+.navLink.active {
+  color: var(--primary-color);
+}
+
+/*  Card  */
+.productCard {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border-radius: 15px;
+  overflow: hidden;
+  background: #fff;
+}
+
+.productCard:hover {
+  transform: translateY(-5px);
+  box-shadow: var(--card-hover-shadow);
+}
+
+.cardImgTop {
+  height: 200px;
+  object-fit: contain;
+  padding: 15px;
+  transition: transform 0.3s ease;
+}
+
+.productCard:hover .cardImgTop {
+  transform: scale(1.05);
+}
+
+.producTitle {
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+}
+
+.productPrice {
+  color: var(--primary-color);
+  font-size: 1.1rem;
+}
+
+/* Cart Modal  */
+.modal-content {
+  border-radius: 15px;
+  border: 2px solid black;
+  box-shadow: rgba(0, 0, 0, 0.35);
+}
+
+.modal-header {
+  background-color: var(--background-color);
+  border-radius: 15px 15px 0 0;
+}
+
+.modal-footer {
+  border-radius: 0 0 15px 15px;
+}
+
+.table th {
+  font-weight: 600;
+  color: var(--secondary-color);
+  text-transform: uppercase;
+  font-size: 0.85rem;
+  letter-spacing: 0.5px;
+}
+
+/* sucessfull order model */
+
+.ThankYouModalContent{
+  border-radius: 0;
+  border: none;
+  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.8) ;
+}
+
+.thankmodalbody {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.modal.fade.show .modal-dialog {
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.thankYoumodelCloseButton {
+  margin: 20px 20px auto 20px;
+  float: right;
+}
+
+#thankYoumodelText {
+  font-size: 1.5rem;
+  font-weight: 200;
+}
+
+#thankYouAnimation {
+  max-width: 200px;
+  max-height: 200px;
+  margin: 30px 0;
+}
+
+.thankYoumodelButton {
+  margin: 30px 0;
+  max-width: 200px;
+}
